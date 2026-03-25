@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Request Form</title>
+</head>
+<body>
+    <h1>Transport Request Form</h1>
+    <form id="transportRequestForm">
+        <label for="groupReference">Group Reference:</label>
+        <input type="text" id="groupReference" name="groupReference" required><br><br>
+
+        <label for="driverInfo">Driver Info:</label>
+        <input type="text" id="driverInfo" name="driverInfo" required placeholder="Name"><br>
+        <input type="text" name="driverContact" required placeholder="Contact"><br><br>
+
+        <label for="pickupTime">Pickup Time:</label>
+        <input type="datetime-local" id="pickupTime" name="pickupTime" required><br><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <label for="tourLeaderContact">Tour Leader Contact:</label>
+        <input type="text" id="tourLeaderContact" name="tourLeaderContact" required><br><br>
+        
+        <button type="submit">Submit Request</button>
+    </form>
+
+    <h2>Share via:</h2>
+    <button onclick="shareViaSMS()">SMS</button>
+    <button onclick="shareViaWhatsApp()">WhatsApp</button>
+    <button onclick="shareViaWeChat()">WeChat</button>
+
+    <script>
+        function shareViaSMS() {
+            // Your SMS sharing functionality
+            alert("Sharing via SMS...");
+        }
+        function shareViaWhatsApp() {
+            // Your WhatsApp sharing functionality
+            alert("Sharing via WhatsApp...");
+        }
+        function shareViaWeChat() {
+            // Your WeChat sharing functionality
+            alert("Sharing via WeChat...");
+        }
+    </script>
+</body>
+</html>
